@@ -130,14 +130,21 @@
                         '<div class="success">✓</div>' +
                         '<h1>Account Connected!</h1>' +
                         '<p>Returning to OpenFi...</p>' +
-                        '<p class="close-hint">You can close this tab after returning to the app.</p>';
+                        '<p class="close-hint">This tab will close automatically.</p>';
 
                     // Show manual link as fallback
                     document.getElementById('return-link').href = appUrl;
                     document.getElementById('manual-link').style.display = 'block';
 
-                    // Auto-redirect to app
+                    // Auto-redirect to app, then try to close tab
                     window.location.href = appUrl;
+
+                    // Try to close tab after redirect (may not work in all browsers)
+                    setTimeout(function() {
+                        window.close();
+                        // If window.close() didn't work, update message
+                        document.querySelector('.close-hint').textContent = 'You can close this tab now.';
+                    }, 1000);
                 },
                 onExit: function(err, metadata) {
                     console.log('Plaid Link exited:', err, metadata);
