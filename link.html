@@ -160,8 +160,16 @@
                             '<p>You can close this tab and try again.</p>';
                     }
                 },
-                onEvent: function(eventName, metadata) {
+onEvent: function(eventName, metadata) {
                     console.log('Plaid event:', eventName, metadata);
+                    // Hide our spinner once Plaid UI is loading
+                    if (eventName === 'OPEN' || eventName === 'HANDOFF') {
+                        document.querySelector('.spinner').style.display = 'none';
+                    }
+                },
+                onLoad: function() {
+                    // Hide our spinner when Plaid iframe loads
+                    document.querySelector('.spinner').style.display = 'none';
                 }
             });
 
