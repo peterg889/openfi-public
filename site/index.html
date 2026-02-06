@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OpenFi — AI-first personal finance for macOS. Ask your money anything. From $49 one-time or $20/mo. Your data never leaves your Mac.">
+  <meta property="og:title" content="OpenFi | Ask Your Money Anything">
+  <meta property="og:description" content="AI-first personal finance for macOS. Oracle answers any question about your money. From $49 one-time. Your data stays on your Mac.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tryopenfi.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OpenFi | Ask Your Money Anything">
+  <meta name="twitter:description" content="AI-first personal finance for macOS. From $49 one-time or $20/mo. Your data stays on your Mac.">
+  <title>OpenFi | Ask Your Money Anything</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="bg-layer" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="OpenFi home">
+      <span class="brand-mark">OF</span>
+      <span class="brand-name">OpenFi</span>
+    </a>
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="#oracle">Oracle</a>
+      <a href="#compare">Compare</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="button" href="#signup">Try OpenFi</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Local-first macOS app</p>
+        <h1>Ask your money anything.<br>Get an honest answer.</h1>
+        <p class="lead">
+          OpenFi keeps your financial data on your Mac &mdash; not on someone else's cloud. Ask Oracle anything about your spending, savings, or investments in plain English and get answers backed by your real transaction data.
+        </p>
+        <ul class="hero-points" aria-label="Key value points">
+          <li><span class="check" aria-hidden="true">&#10003;</span> <strong>AI-first budgeting</strong> &mdash; ask Oracle anything about your money</li>
+          <li><span class="check" aria-hidden="true">&#10003;</span> <strong>Your data never leaves your Mac</strong> &mdash; we literally can't see it</li>
+          <li><span class="check" aria-hidden="true">&#10003;</span> <strong>From $49 one-time</strong> &mdash; or $20/mo with AI included</li>
+        </ul>
+        <form class="hero-form glass" id="signup" action="https://formspree.io/f/mvzbopnv" method="POST" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+          <button type="submit" class="button button-lg">Join the Launch List</button>
+        </form>
+        <p class="form-note" id="form-note" role="status" aria-live="polite">Join the launch list. No spam &mdash; just a notification when we ship.</p>
+        <p class="trust-line"><span class="plaid-badge">Bank sync powered by <strong>Plaid</strong></span> &middot; 30-day money-back guarantee</p>
+      </div>
+      <div class="hero-card glass" aria-hidden="true">
+        <p class="card-kicker">Oracle</p>
+        <h2>&ldquo;What changed in my spending this month?&rdquo;</h2>
+        <div class="oracle-response">
+          <p>Your total spending is up <strong>12% vs. last month</strong>, driven by two categories:</p>
+          <ul>
+            <li><strong>Dining:</strong> $840 (+$180). You ate out 6 more times than last month, mostly on weekends.</li>
+            <li><strong>Home:</strong> $1,200 (+$420). One-time HVAC repair on Jan 14.</li>
+          </ul>
+          <p>Everything else is within normal range. Your savings rate is still 22%.</p>
+        </div>
+        <p class="brief-foot">Real AI analysis from your actual transaction data.</p>
+      </div>
+    </section>
+
+    <section class="section problem-section">
+      <div class="section-head">
+        <p class="eyebrow">The problem</p>
+        <h2>Your financial tools are broken</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card glass">
+          <h3>$99/year for a spreadsheet with bank sync</h3>
+          <p>Monarch and YNAB charge $99&ndash;109/year to store <em>your</em> data on <em>their</em> servers. No real AI. Sync breaks constantly. And the price goes up every year.</p>
+        </div>
+        <div class="problem-card glass">
+          <h3>Powerful but painful</h3>
+          <p>Spreadsheets give you control but demand hours of manual entry. No bank sync. No AI. You can't ask &ldquo;why did my spending go up?&rdquo; and get an answer.</p>
+        </div>
+        <div class="problem-card glass">
+          <h3>&ldquo;Free&rdquo; means you're the product</h3>
+          <p>Mint shut down and displaced millions. Empower is degrading under new ownership. Both sold your data to fund &ldquo;free.&rdquo; You deserve better.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section oracle-section" id="oracle">
+      <div class="section-head">
+        <p class="eyebrow">The killer feature</p>
+        <h2>Oracle: a financial advisor that lives on your Mac</h2>
+        <p class="section-sub">Ask any question about your money in plain English. Oracle analyzes your real transaction data and gives you a straight answer with evidence.</p>
+      </div>
+      <div class="oracle-demo-grid">
+        <article class="oracle-card glass oracle-featured">
+          <p class="oracle-question">Am I on track for my house down payment?</p>
+          <p class="oracle-answer">At your current savings rate of $2,100/month, you'll hit your $60K goal by March 2027 &mdash; 2 months ahead of schedule. Your biggest risk is the quarterly insurance payment in April.</p>
+        </article>
+        <article class="oracle-card glass">
+          <p class="oracle-question">What subscriptions am I paying for that I haven't used?</p>
+          <p class="oracle-answer">3 subscriptions with no matching activity in 60+ days: Adobe Creative Cloud ($54.99), Peloton ($44), and ClassPass ($49). That's $147.99/month &mdash; $1,776/year.</p>
+        </article>
+        <article class="oracle-card glass">
+          <p class="oracle-question">Can I afford a $3K vacation in June?</p>
+          <p class="oracle-answer">Based on your projected cash flow, you'll have $4,200 in discretionary funds by June 1. A $3K trip is doable without touching your emergency fund or slowing your house goal.</p>
+        </article>
+        <article class="oracle-card glass">
+          <p class="oracle-question">How does this month compare to last month?</p>
+          <p class="oracle-answer">Spending is up 8% ($380). The spike is one-time: a $420 car repair. Excluding that, you're actually down 2%. Recurring expenses are flat.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="section-head">
+        <p class="eyebrow">Setup</p>
+        <h2>Three steps. Five minutes.</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card glass">
+          <span class="step-number">1</span>
+          <h3>Connect your banks</h3>
+          <p>Link checking, savings, credit cards, and investment accounts through Plaid. 12,000+ institutions supported.</p>
+        </div>
+        <div class="step-card glass">
+          <span class="step-number">2</span>
+          <h3>AI learns your finances</h3>
+          <p>Transactions sync and categorize automatically. A short interview personalizes your categories to your actual life.</p>
+        </div>
+        <div class="step-card glass">
+          <span class="step-number">3</span>
+          <h3>Ask anything</h3>
+          <p>Oracle is ready. Ask about spending, goals, net worth, or whatever's on your mind. Get answers, not charts you have to interpret.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="compare">
+      <div class="section-head">
+        <p class="eyebrow">Comparison</p>
+        <h2>How OpenFi stacks up</h2>
+      </div>
+      <div class="compare-table-wrap glass">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="highlight">OpenFi</th>
+              <th>Monarch</th>
+              <th>YNAB</th>
+              <th>Copilot</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td class="highlight"><strong>$49 once / $20/mo</strong></td>
+              <td>$99/yr</td>
+              <td>$109/yr</td>
+              <td>$95/yr</td>
+            </tr>
+            <tr>
+              <td>AI Q&A (ask anything)</td>
+              <td class="highlight"><span class="tbl-yes">&#10003;</span> Oracle</td>
+              <td>Basic assistant</td>
+              <td><span class="tbl-no">&#10007;</span></td>
+              <td><span class="tbl-no">&#10007;</span></td>
+            </tr>
+            <tr>
+              <td>Data stays on your device</td>
+              <td class="highlight"><span class="tbl-yes">&#10003;</span></td>
+              <td><span class="tbl-no">&#10007;</span> Cloud</td>
+              <td><span class="tbl-no">&#10007;</span> Cloud</td>
+              <td><span class="tbl-no">&#10007;</span> Cloud</td>
+            </tr>
+            <tr>
+              <td>Budgeting + investments</td>
+              <td class="highlight"><span class="tbl-yes">&#10003;</span></td>
+              <td><span class="tbl-yes">&#10003;</span></td>
+              <td><span class="tbl-no">&#10007;</span> No investments</td>
+              <td><span class="tbl-yes">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>AI categorization</td>
+              <td class="highlight"><span class="tbl-yes">&#10003;</span> Learns your corrections</td>
+              <td>Basic rules</td>
+              <td>Basic rules</td>
+              <td>Per-user ML</td>
+            </tr>
+            <tr>
+              <td>Native macOS app</td>
+              <td class="highlight"><span class="tbl-yes">&#10003;</span> SwiftUI</td>
+              <td><span class="tbl-no">&#10007;</span> Web app</td>
+              <td><span class="tbl-no">&#10007;</span> Web app</td>
+              <td><span class="tbl-yes">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>Data portability</td>
+              <td class="highlight"><span class="tbl-yes">&#10003;</span> You own the file</td>
+              <td>CSV export</td>
+              <td>CSV export</td>
+              <td>CSV export</td>
+            </tr>
+            <tr>
+              <td>Subscription required</td>
+              <td class="highlight"><strong>No</strong></td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section privacy-section">
+      <div class="section-head">
+        <p class="eyebrow">Architecture</p>
+        <h2>Your finances shouldn't live on someone else's computer</h2>
+        <p class="section-sub">OpenFi is local-first. Your data stays in an encrypted database on your Mac. We never see it, we can't sell it, and there's no cloud server to breach.</p>
+      </div>
+      <div class="privacy-grid">
+        <div class="privacy-card glass privacy-theirs">
+          <h3>Their architecture</h3>
+          <p class="privacy-flow">You &rarr; Their Cloud &rarr; Your Bank</p>
+          <p>Your transactions sit on someone else's server. They can see it, mine it, lose it in a breach, or shut down and take it with them (ask Mint users).</p>
+        </div>
+        <div class="privacy-card glass privacy-ours">
+          <h3>OpenFi's architecture</h3>
+          <p class="privacy-flow">You &rarr; Your Mac &rarr; Your Bank</p>
+          <p>Your Mac talks directly to Plaid. Transactions land in a local encrypted database. API keys live in macOS Keychain. Nothing ever hits our servers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="section-head">
+        <p class="eyebrow">Pricing</p>
+        <h2>AI-first budgeting. Choose your plan.</h2>
+        <p class="section-sub">Same features as Monarch and YNAB &mdash; plus a real AI that answers your questions. Your data stays on your Mac either way.</p>
+      </div>
+      <div class="pricing-grid pricing-two-col" id="pricing-grid">
+        <article class="pricing-card glass">
+          <p class="tier-badge">Bring your own AI key</p>
+          <h3>Founder</h3>
+          <p class="price"><span>$49</span><small>one-time &middot; founding price</small></p>
+          <ul>
+            <li>Everything in OpenFi</li>
+            <li>Oracle AI powered by your own API key</li>
+            <li>Unlimited bank accounts via Plaid</li>
+            <li>All reports, goals, and dashboards</li>
+            <li>All future updates included</li>
+          </ul>
+          <p class="price-compare">You bring an OpenAI or Anthropic key. You control the AI costs directly.</p>
+          <form class="pricing-form" action="https://formspree.io/f/mvzbopnv" method="POST" novalidate>
+            <input type="hidden" name="plan" value="founder">
+            <label for="email-founder" class="sr-only">Email address</label>
+            <input id="email-founder" name="email" type="email" placeholder="Enter your email" required>
+            <button type="submit" class="button button-lg button-full button-ghost-alt">Join the Launch List</button>
+          </form>
+        </article>
+        <article class="pricing-card glass featured">
+          <p class="tier-badge">AI included</p>
+          <h3>Pro</h3>
+          <p class="price"><span>$20</span><small>/month</small></p>
+          <ul>
+            <li>Everything in OpenFi</li>
+            <li>Oracle AI &mdash; unlimited questions, we handle the AI</li>
+            <li>Unlimited bank accounts via Plaid</li>
+            <li>All reports, goals, and dashboards</li>
+            <li>All future updates included</li>
+          </ul>
+          <p class="price-compare">Same price as YNAB &mdash; but with an AI that actually answers your questions.</p>
+          <form class="pricing-form" action="https://formspree.io/f/mvzbopnv" method="POST" novalidate>
+            <input type="hidden" name="plan" value="pro">
+            <label for="email-pricing" class="sr-only">Email address</label>
+            <input id="email-pricing" name="email" type="email" placeholder="Enter your email" required>
+            <button type="submit" class="button button-lg button-full">Join the Launch List</button>
+          </form>
+          <p class="guarantee">30-day money-back guarantee. No questions asked.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section built-by-section">
+      <div class="built-by">
+        <p><strong>Built by Peter and Scott.</strong> We were tired of paying $99/year for budgeting apps that couldn't answer a simple question about our money. So we built one that can.</p>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="glass">
+          <summary>What's the difference between the Founder and Pro plans?</summary>
+          <p>Both plans get the full app &mdash; bank sync, reports, budgets, goals, and Oracle. The difference is how Oracle's AI is powered. Founder ($49 one-time) uses your own API key from OpenAI or Anthropic &mdash; you control the costs directly. Pro ($20/mo) includes AI with no setup &mdash; we handle it, and Oracle just works out of the box.</p>
+        </details>
+        <details class="glass">
+          <summary>Is this macOS only?</summary>
+          <p>Yes. OpenFi is a native macOS app built with SwiftUI. This is a deliberate choice &mdash; local-first architecture means your data stays on your machine, and native means it's fast and integrates with macOS Keychain for credential security. Requires macOS Ventura or later. iOS is on the roadmap.</p>
+        </details>
+        <details class="glass">
+          <summary>Do you ever see my bank credentials?</summary>
+          <p>No. Bank authentication is handled entirely by Plaid &mdash; you authenticate directly with your bank through Plaid's secure flow. OpenFi never sees your bank password. Your credentials are stored in macOS Keychain, not in our app or on any server.</p>
+        </details>
+        <details class="glass">
+          <summary>How is my data protected?</summary>
+          <p>Your financial data is stored in an encrypted local database on your Mac. API keys and credentials are managed through macOS Keychain (hardware-backed encryption). We never see, store, or transmit your financial data. There's no cloud to breach. No analytics. No telemetry.</p>
+        </details>
+        <details class="glass">
+          <summary>Can I track both spending and investments?</summary>
+          <p>Yes. OpenFi connects to checking, savings, credit cards, loans, and investment accounts. You get a unified net worth view alongside spending analysis, goal tracking, and Oracle Q&A across everything.</p>
+        </details>
+        <details class="glass">
+          <summary>What can I ask Oracle?</summary>
+          <p>Anything about your finances. &ldquo;Why did my spending go up?&rdquo; &ldquo;Am I on track for my goals?&rdquo; &ldquo;What subscriptions can I cut?&rdquo; &ldquo;Can I afford this purchase?&rdquo; Oracle analyzes your real transaction data and gives you plain-English answers with evidence.</p>
+        </details>
+        <details class="glass">
+          <summary>Can I import data from Mint, Monarch, or YNAB?</summary>
+          <p>Yes &mdash; OpenFi supports CSV import for transaction history. Export from your current tool and import into OpenFi. Once your bank accounts are linked via Plaid, new transactions sync automatically.</p>
+        </details>
+        <details class="glass">
+          <summary>What if you stop working on this?</summary>
+          <p>Your data is a local file you own. Even if OpenFi disappeared tomorrow, your financial data is yours &mdash; it's just a file on your Mac. You can back it up, move it, or access it however you want. No vendor lock-in.</p>
+        </details>
+        <details class="glass">
+          <summary>Does it work offline?</summary>
+          <p>Yes. All your data, reports, budgets, and goals work offline. The only features that require internet are bank sync (via Plaid) and Oracle AI queries. Everything else runs entirely on your Mac.</p>
+        </details>
+        <details class="glass">
+          <summary>What if I switch computers?</summary>
+          <p>Copy your database file to your new Mac. Since everything is local, you own the file and can back it up however you prefer &mdash; Time Machine, iCloud Drive, or manual copy.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="final-cta glass-dark">
+        <h2>Stop paying rent on your financial data.</h2>
+        <p>AI-first budgeting from $49 one-time or $20/mo. Your data stays on your Mac.</p>
+        <form class="cta-form" action="https://formspree.io/f/mvzbopnv" method="POST" novalidate>
+          <label for="email-cta" class="sr-only">Email address</label>
+          <input id="email-cta" name="email" type="email" placeholder="Enter your email" required>
+          <button type="submit" class="button button-lg">Join the Launch List</button>
+        </form>
+        <p class="cta-subtext">30-day money-back guarantee &middot; Bank sync powered by Plaid</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>OpenFi</strong>
+      <p>Private financial intelligence for your Mac.</p>
+    </div>
+    <div class="footer-links" aria-label="Footer links">
+      <a href="#oracle">Oracle</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="mailto:hello@tryopenfi.com">hello@tryopenfi.com</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
